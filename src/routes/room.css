@@ -1,0 +1,59 @@
+.video-container {
+    width: 70vw;
+    margin: 2%;
+  }
+  
+  .video-container>div {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+  }
+  
+  video {
+    width: 60vw;
+    height: 40vw;
+  }
+  
+  @media(max-width:768px) {
+    .video-container {
+      width: 100vw;
+    }
+    video {
+      width: 90vw;
+      height: 63vw;
+    }
+  }
+  .mini-video-container{
+    width: fit-content;
+    height: 150px;
+    margin-top: 0%;
+    background-color: black;
+
+  }
+  .mini-video {
+    width: 150px;
+    height: 150px;
+  
+   display: inline-block;
+  }
+  
+  .end-call-btn-container {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+  }
+  
+  .end-call-btn {
+    background-color: #d1153d;
+    padding: 15px 17px;
+    border-radius: 50%;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .end-call-btn>svg {
+    transform: rotate(-135deg);
+    font-size: 20px;
+  }
