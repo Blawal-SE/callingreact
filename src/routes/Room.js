@@ -24,7 +24,7 @@ const Room = (props) => {
   const roomID = props.match.params.roomID;
 
   useEffect(() => {
-    socketRef.current = io("localhost:5000/");
+    socketRef.current = io("https://videogroup.herokuapp.com/");
     navigator.mediaDevices
       .getUserMedia({ video: true, audio: true })
       .then((stream) => {
