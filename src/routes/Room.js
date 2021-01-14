@@ -21,8 +21,8 @@ const Room = (props) => {
   const socketRef = useRef();
   const userVideo = useRef();
   const peersRef = useRef([]);
-  const roomID = props.match.params.roomID;
-
+  const roomID = '12';//props.match.params.roomID;
+console.log(roomID);
   useEffect(() => {
     socketRef.current = io("https://videogroup.herokuapp.com/");
     navigator.mediaDevices
